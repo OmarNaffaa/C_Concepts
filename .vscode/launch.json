@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) DebugStringFunctions",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/PointersAndArrays/StringFunctions.exe",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "cwd": "${workspaceFolder}",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build stringfunctions"
+        }
+    ],
+    "compounds": []
+}
