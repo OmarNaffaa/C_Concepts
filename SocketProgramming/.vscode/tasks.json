@@ -1,0 +1,23 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build socket client",
+            "command": "",
+            "args": [
+                "make",
+                "socket_client",
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Build socket server",
+            "command": "",
+            "args": [
+                "make",
+                "socket_server",
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

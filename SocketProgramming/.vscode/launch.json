@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) DebugSocketClient",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/SocketClient/socket_client",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build socket client"
+        },
+        {
+            "name": "(gdb) DebugSocketServer",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/SocketServer/socket_server",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build socket server"
+        }
+    ],
+    "compounds": []
+}
